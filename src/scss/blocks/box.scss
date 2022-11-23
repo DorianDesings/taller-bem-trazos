@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-l);
+    background-color: var(--primary-color);
+    font-size: var(--text-l);
+    transition: transform .4s;
+}
+
+.box-container:hover .box{
+    transform: translateX(calc(1000px - 100% - 4rem));
+}
